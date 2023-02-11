@@ -1,0 +1,42 @@
+nav{
+    background: var(--white);
+    position: fixed;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    padding: 30px 15px;
+    max-width: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: 300ms;
+    & ul{
+        width: max-content;
+         margin: 30px 0;
+    }
+    & ul li:last-of-type a {
+        margin-bottom: 0;
+    }
+    & ul a{
+        color: #939393;
+        font-size: 18px;
+        padding: 0 35px 45px 30px;
+        transition: 500ms;
+        align-items: center;
+    }
+    &:hover{
+        max-width: 234px;
+        width: 100%;
+    }
+    &__logo, &__user{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    & ul a:hover{
+        color: #2A86B1;
+    }
+}
+    

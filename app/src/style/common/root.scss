@@ -1,0 +1,51 @@
+/* o'zak scss, bu faylda hamma kerakli nastroykalar bo'ladi  */
+
+$fonts: /* ('Roboto', 'Regular', 400),
+        ('Roboto', 'Medium', 500),
+        ('fontawesome', 'light', 300),
+        ('fontawesome', 'duotone', 900), */
+        ('Rubik', 'Light', 300),
+        ('Rubik', 'Regular', 400),
+        ('Rubik', 'Bolt', 700);
+
+
+@each $folder, $file_name, $weight in $fonts {
+    @font-face{
+        font-family:$folder;
+        src: url(/fonts/#{$folder}/#{$folder}-#{$file_name}.woff);
+        font-weight:$weight
+    }
+}
+
+:root{
+    font-size: 16px;
+    --navhov2A86B1: #2A86B1;
+    --nav939393: #939393;
+    --main464748: #464748;
+    --main696868: #696868;
+    --ser2A86B1: #2A86B1;
+    --cont686868: #686868;
+    --contDe545454: #545454;
+    --cont000000: #000000;
+    --cont323232: #323232;
+    --bg: #3FA5D5;
+    --links: #7177F1;
+    --text: white;
+    --title: #323232;
+    --nav-bg: #4A939B;
+    --nav-click: #053b41;
+    --white: #FFFFFF;
+    --main-title:#2C2A2A;
+    --main-desc:#9B9B9B;
+    --main-proTi:#4A939B;
+    --main-proDe: #FFFEFE;
+}
+
+@mixin shadow($blur,$scale) {
+            box-shadow: 0px 0px #{$blur}px #{$scale}px rgba(113, 119, 241, 0.5);
+}
+
+
+
+
+

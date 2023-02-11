@@ -1,0 +1,14 @@
+nav 
+    a.nav__logo(href="") 
+        img(src="/images/logo.webp", alt="")
+    -var links = [{href:'#', img: '/images/1.webp', name: 'Статьи'}, {href:'#', img: '/images/2.webp', name: 'Услуги'}, {href:'#', img: '/images/3.webp', name: 'Поддержка'}, {href:'#', img: '/images/4.webp', name: 'Контакты'}]
+
+    ul.nav__list 
+        -for(var i = 0; i < links.length; i++) 
+            li.nav__item
+                img(src=links[i].img, alt="") 
+                a(href= links[i].href).nav__link= links[i].name
+    a.nav__user(href="#")
+        img(src="/images/5.webp", alt="")
+
+                    

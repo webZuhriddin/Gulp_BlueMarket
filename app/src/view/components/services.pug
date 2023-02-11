@@ -1,0 +1,21 @@
+.services 
+    .Gulp__BlueMarke
+        .ser
+        -var service = [{name: 'Мощная аналитика', img: '/images/main1.webp', href: 'Подробнее'}, {name: 'Ведение документов', img: '/images/main2.webp', href: 'Подробнее'}, {name: 'Международные решения', img: '/images/main3.webp', href: 'Подробнее'}, {name: 'Бизнес стратегии', img: '/images/main4.webp', href: 'Подробнее'}]
+    
+    -for(var i = 0; i< service.length; i++)
+        .services__item
+            h2(service[i].name).services__title= service[i].name
+            img.services__img(src= service[i].img, alt="")      
+            a.btn(href= service[i].href).services__btn= service[i].href      
+            
+
+
+
+
+
+
+
+
+
+

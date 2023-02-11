@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper{
+    font-family: "Rubik";
+    background: #F1F1F1;
+}
+
+.wrapper *::before,
+.wrapper *::after {
+    font-family: 'Rubik';
+
+}
+
+

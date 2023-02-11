@@ -1,0 +1,14 @@
+
+.header__nav-btn::before{
+    content: "\f5fe";;
+    font-weight: 300;
+    color: var(--white);
+    position: absolute;
+}
+
+.header__nav-btn::after{
+    content: "\10f5fe";
+    font-weight: 900;
+    color: var(--white);
+    opacity: 0.5;
+}

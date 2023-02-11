@@ -1,0 +1,66 @@
+/* bu scss da kerakli o'zgaruvchilar tuziladi */
+$fluid: 100%;
+$xxl: 1400px;
+$xl: 1280px;
+$lg: 992px;
+$lg-set:924px;                             /* container razmerlari */
+$md: 768px;
+$sm: 576px;
+$gutters: 30px;
+$gutters-side: calc($gutters / 2);
+
+@mixin container($padding: $gutters-side) { /* mixin bu sccs da function*/
+    max-width: $lg * 0.9428571428571429;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding;
+    padding-right: $padding;
+    @include media($fluid) {
+        max-width: $fluid * 1;
+    }
+    @include media($xl) {
+        max-width: $xl * 0.95;
+    }
+    @include media($lg) {
+        max-width: $lg * 0.967741935483871;
+    }
+    @include media($lg-set) {
+        max-width: $lg * 0.85;
+    }
+    @include media($md) {
+        max-width: $md * 0.9375;
+    }
+    @include media($sm) {
+        max-width: 100%;
+    }
+}
+
+@mixin media($size: $xxl) {
+    @media (max-width: $size) {
+        @content; /* content bu funcsiyadagi malumotlarni o'zgartirish/qo'shimcha qo'shishni beradi */
+    }
+}
+
+.Gulp__BlueMarket {
+    @include container() /* incluide bu funcsiyani chaqirish uchun */
+}
+
+.btn{
+    max-width: 211px;
+    width: 100%;
+    background: #3FA5D5;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px, 3px rgba(0, 0, 0, 0.3);
+    padding: 7px 62px;
+    transition: 300ms;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.btn:hover{
+    background: #2A86B1;
+}
